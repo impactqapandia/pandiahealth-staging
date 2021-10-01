@@ -1,0 +1,149 @@
+<style>
+.visually-hidden { border: 0; padding: 0; margin: 0; position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); white-space: nowrap; }
+
+.styled_banner .home-redesign h1 .top-title { margin-left:120px; bottom: -15px; font-size: 65px; }
+.styled_banner h1 .middle-title{font-size: 112px;margin-top: 5px;margin-bottom: 0px;}
+.styled_banner .home-redesign h1 .bottom-title { margin-left: 40px; top: 2px; font-size: 68px;}
+
+.styled-banner-caption.home-redesign ul{margin-top:2rem;padding-left: 0; display: grid;}
+.styled_banner .home-redesign .tagline::after{width:100%;}
+.styled-banner-caption.home-redesign p.bottom-tagline{margin-bottom:20px;}
+
+.styled-banner-caption.home-redesign ul li{display:block;}
+.styled-banner-caption.home-redesign ul{display:block;}
+html .styled-banner-caption.home-redesign ul li:last-child{position:relative;right:0;}
+
+@media only screen and (max-width: 600px) {
+	.styled_banner .home-redesign h1 .top-title{bottom :0 !important;margin-left: 0px !important;font-size: 54px;}
+    .styled_banner h1 .middle-title{font-size: 94px !important;margin-top:20px !important;margin-bottom:20px !important;}
+    .styled_banner.home-renew h1{margin-bottom: 0;}
+    .styled-banner-image{min-width:300px;}
+    .styled_banner .tagline::after{width: 100% !important;}
+    .styled_banner .home-redesign h1 .bottom-title{margin-bottom: 0;font-size: 56px;}
+    #banner_cta.redesign .row .col{margin-top: 0;padding-top: 0;padding:0;}
+    #banner_cta.redesign{box-shadow:none; width: 80%; margin:0 auto;}
+    #banner_cta.redesign .banner-cta{margin: 10px auto;}
+ }
+ @media only screen and (min-width:601px) and (max-width: 767px){
+    .styled_banner .home-redesign h1 .top-title{margin-left:0;}
+    .styled-banner-caption.home-redesign ul{margin-top: 0;}
+    .styled_banner .home-redesign h1 .bottom-title{top:5px;}
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+.styled_banner .home-redesign h1 .top-title { margin-left:0px !important; bottom:-18px !important; font-size:65px;}
+.styled_banner h1 .middle-title{font-size: 112px;margin-top:20px;  margin-bottom: 0px !important;}
+.styled_banner .home-redesign h1 .bottom-title { margin-left:0px !important; top: 15px;font-size:67px !important; }
+.styled_banner .tagline{font-size: 18px;}
+.styled_banner .tagline::after{width: 100% !important;}
+.styled-banner-image{min-width:500px;margin-top: 10px;}
+ #banner_cta.redesign{box-shadow:none;}
+.styled-banner-caption.home-redesign ul{margin:0;}
+ }
+
+ @media only screen and (min-width: 1024px) and (max-width: 1366px){
+.styled_banner .home-redesign h1 .top-title { margin-left:120px !important; bottom:-18px !important; font-size:65px;}
+.styled_banner h1 .middle-title{font-size: 112px;margin-top:5px;  margin-bottom: 0px !important;}
+.styled_banner .home-redesign h1 .bottom-title { margin-left:30px !important; top:0px;font-size:67px !important; }
+.styled-banner-caption.home-redesign p.bottom-tagline { margin-bottom: 20px; width: 45%; text-align: center; margin-top: 20px; font-size: 18px;}
+.styled_banner .tagline::after{width: 100% !important;}
+.styled-banner-image{min-width:500px;margin-top: 10px;}
+ #banner_cta.redesign{box-shadow:none;}
+.styled-banner-caption.home-redesign ul{margin:0;}
+ }
+
+
+@media only screen and (min-width:1025px) and (max-width: 1239px){
+.styled_banner .home-redesign h1 .top-title { margin-left:120px !important; bottom: -15px; font-size: 65px; }
+.styled_banner h1 .middle-title{font-size: 112px;margin-top: 5px;margin-bottom: 0px;}
+.styled_banner .home-redesign h1 .bottom-title { margin-left: 40px; top: 2px; font-size: 68px;}
+.styled-banner-caption.home-redesign p.bottom-tagline{width:55% !important;text-align: center !important;}
+}
+
+@media only screen and (min-device-width: 1921px) and (max-device-width: 2560px){
+.styled_banner .home-redesign h1 .top-title { margin-left:120px; bottom: -15px; font-size: 65px; }
+.styled_banner h1 .middle-title{font-size: 112px;margin-top: 0px;margin-bottom: -12px; padding:0}
+.styled_banner .home-redesign h1 .bottom-title { margin-left: 40px; top: 10px !important; font-size: 68px;}
+.styled_banner .home-redesign h1 .top-title, .styled_banner .home-redesign h1 .bottom-title {top:15px !important;}
+.bottom-tagline{margin-top:20px;}
+.styled-banner-caption.home-redesign p.bottom-tagline{margin-bottom:20px; text-align: center; width:40%; font-size: 22px;}
+.styled-banner-caption.home-redesign ul li:last-child{margin-left: 0;}
+html .styled-banner-caption.home-redesign ul li:last-child{left:7%;}
+ }
+
+</style>
+<section class="styled_banner home-renew">
+    <div class="styled-banner-caption home-redesign">
+        <div class="table-element">
+            <div class="table-cell">
+                <p class="tagline"><?php echo $section['tagline']; ?></p>
+                <h1>
+					<span class="visually-hidden">Birth Control Delivered</span>
+					<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/birthControl-txt.svg" alt="" srcset=""> -->
+                    <span class="top-title"><?php echo $section['top_title']; ?></span>
+                    <span class="middle-title"><?php echo $section['middle_title']; ?></span>
+                    <span class="bottom-title"><?php echo $section['bottom_title']; ?></span>
+                </h1>
+		<!--<div class="row bottom-tagline-button">
+			<div class="col-7">
+				<p class="bottom-tagline">Hassle-free and easy access to trusted birth control medications online</p>
+			</div>
+			<div class="col-5">
+				<a href="https://app.pandiahealth.com/users/sign_up" class="button">
+					<img src="https://pandiahealth.ropstambpo.com/wp-content/themes/pandiahealth/img/arrow-right.png" class="unhover-arrow">
+					<span>Get Started</span>
+					<img src="https://pandiahealth.ropstambpo.com/wp-content/themes/pandiahealth/img/arrow-left.png" class="unhover-arrow">
+				</a>
+			</div>
+		</div>-->
+				<ul>
+					<li>
+						<p class="bottom-tagline"><?php echo $section['tagline_2']; ?></p>
+					</li>
+		<li>
+			<a href="https://app.pandiahealth.com/users/sign_up" class="button home-new">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-right.png" class="unhover-arrow" alt="Right Arrow">
+				<span>Get Started</span> 
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-left.png" class="unhover-arrow" alt="Left Arrow">
+			</a>
+		</li>
+
+				</ul>
+                <!--<a href="https://app.pandiahealth.com/users/sign_up" class="button">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-right.png" class="unhover-arrow">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-right-hover.png" class="hover-arrow">
+					<span>Get Started</span>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-left.png" class="unhover-arrow">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-left-hover.png" class="hover-arrow">
+                </a>-->
+                <?php if ($section['disclaimer']) { ?>
+                    <p class="text-white"><?php echo $section['disclaimer']; ?></p>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+    <!--<div id='styled_banner-get-started-bar'>
+		<ul>
+			<li>
+				<a href="<?php echo $section['link_url']; ?>" class='get-started-link button'>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-right.png" class="unhover-arrow">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-right-hover.png" class="hover-arrow">
+					<span><?php echo $section['link_text']; ?></span>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-left.png" class="unhover-arrow">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow-left-hover.png" class="hover-arrow">
+        		</a>
+			</li>
+			<li>
+			   <p class="bottom-tagline">
+				   <?php echo $section['tagline_2']; ?>
+				</p>
+			</li>
+		</ul> 
+    </div>-->
+    <div class='styled-banner-img '>
+        <img src="<?php echo $section['image']; ?>" class="styled-banner-image-new <?php if($section['mobile_image']){ ?> sbi-desktop <?php } ?>" alt="Banner Image">
+        <?php if($section['mobile_image']){ ?>
+            <img src="<?php echo $section['mobile_image']; ?>" class="styled-banner-image sbi-mobile" alt="Banner Image">
+        <?php } ?>
+    </div>
+</section>
